@@ -1,0 +1,75 @@
+body {
+  font-family: "Caveat Brush", cursive;
+  background-color: rgb(250, 246, 239);
+  margin: 0;
+  background-image: url(img/nature-6800718_1280.jpg);
+  color: rgb(242, 242, 242);
+}
+
+.parent {
+  background-color: rgba(184, 170, 148, 0.4);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 40px 0 0 0; */
+  gap: 25px;
+}
+
+.child {
+  font-size: 20px;
+}
+
+.child:nth-child(1) {
+  margin-top: 40px;
+  font-size: 35px;
+}
+
+form {
+  width: 100vw;
+}
+
+fieldset {
+  border: none;
+  padding: 0 8% 0 8%;
+  margin: 0;
+}
+
+label {
+  display: block;
+  /* margin: 0.5em 0; */
+  margin-top: 0.5em;
+}
+
+input,
+textarea {
+  background-color: rgba(199, 185, 160, 0.8);
+  border: 1px solid rgb(242, 242, 242);
+  width: 95%;
+  /* padding: 2px 0 2px 15px; */
+  margin-top: 0.15em auto 0 auto;
+  font-family: "Caveat Brush", cursive;
+  font-size: 22px;
+  color: rgb(242, 242, 242);
+}
+
+.inline {
+  width: unset;
+  margin: 0 0 0 1em;
+}
+
+input[type="submit"] {
+  background-color: rgba(199, 185, 160, 0.8);
+  border: 1px solid rgb(242, 242, 242);
+  color: rgb(242, 242, 242);
+  display: block;
+  width: max-content;
+  margin: 1.5em auto 0.5em auto;
+  font-family: "Caveat Brush", cursive;
+  padding: 0.5em;
+}
+
+textarea::placeholder {
+  color: rgb(242, 242, 242);
+  font-size: 20px;
+}

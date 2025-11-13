@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wandertreff Veronica</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <article>
+        <header>
+          <div class="parent">
+            <div class="child">
+              Wandertreff<br />
+              Kind & Baby
+            </div>
+            <form
+              method="post"
+              action="https://script.google.com/macros/s/AKfycbw9DHadUXxMqxOI9rLMCC6LLJToVVlnmAg5HzdDuUgsok8U7o4jsQB2cQDk91_cN38w-Q/exec"
+              name="contact-form"
+              class="child"
+            >
+              <fieldset>
+                <label for="Vorname"
+                  >Vorname<input id="Vorname" type="text" name="Vorname"
+                /></label>
+                <label for="Nachname"
+                  >Nachname<input id="Nachname" type="text" name="Nachname"
+                /></label>
+                <label for="DAV-Mitgliedsnummer"
+                  >DAV-Mitgliedsnummer<input
+                    id="DAV-Mitgliedsnummer"
+                    type="text"
+                    name="DAV-Mitgliedsnummer"
+                /></label>
+                <label for="Anzahl-Kinder"
+                  >Anzahl Kinder<input
+                    id="Anzahl-Kinder"
+                    type="number"
+                    min="1"
+                    max="10"
+                    name="Anzahl-Kinder"
+                /></label>
+                <label for="Name-Kinder"
+                  >Informationen zum Kind(er)
+                  <textarea
+                    id="Name-Kinder"
+                    rows="4"
+                    cols="4"
+                    placeholder="Vorname, Nachname, Alter"
+                    type="text"
+                    name="Name-Kinder"
+                  ></textarea>
+                </label>
+              </fieldset>
+              <input id="submit" type="submit" value="Ich bin am Start!" />
+            </form>
+          </div>
+        </header>
+        <section></section>
+      </article>
+    </main>
+    <footer></footer>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxf0RwK7iFCxPvQzfgxZku4NPVEscxYQfbiddr67Az9zo5tOIhvZ1d2e0pyDWlI_zr8/exec";
+
+      const form = document.forms["contact-form"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) =>
+            alert("Vielen Dank! Schön, dass du mit dabei bist.")
+          )
+          .then(() => {
+            window.location.reload();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
