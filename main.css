@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 40px 0 0 0; */
+  padding: 40px 20px 0 20px;
   gap: 25px;
 }
 
@@ -25,16 +25,6 @@ body {
   font-size: 35px;
 }
 
-form {
-  width: 100vw;
-}
-
-fieldset {
-  border: none;
-  padding: 0 8% 0 8%;
-  margin: 0;
-}
-
 label {
   display: block;
   /* margin: 0.5em 0; */
@@ -45,7 +35,7 @@ input,
 textarea {
   background-color: rgba(199, 185, 160, 0.8);
   border: 1px solid rgb(242, 242, 242);
-  width: 95%;
+  width: 98%;
   /* padding: 2px 0 2px 15px; */
   margin-top: 0.15em auto 0 auto;
   font-family: "Caveat Brush", cursive;
@@ -53,9 +43,9 @@ textarea {
   color: rgb(242, 242, 242);
 }
 
-.inline {
-  width: unset;
-  margin: 0 0 0 1em;
+textarea::placeholder {
+  color: rgb(242, 242, 242);
+  font-size: 20px;
 }
 
 input[type="submit"] {
@@ -67,9 +57,4 @@ input[type="submit"] {
   margin: 1.5em auto 0.5em auto;
   font-family: "Caveat Brush", cursive;
   padding: 0.5em;
-}
-
-textarea::placeholder {
-  color: rgb(242, 242, 242);
-  font-size: 20px;
 }
