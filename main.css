@@ -20,22 +20,19 @@ body {
 }
 
 .child:nth-child(1) {
-  margin-top: 40px;
   font-size: 35px;
 }
 
 label {
   display: block;
-  /* margin: 0.5em 0; */
   margin-top: 0.5em;
 }
 
 input,
 textarea {
-  background-color: rgba(199, 185, 160, 0.8);
+  background-color: rgba(199, 185, 160, 0.7);
   border: 1px solid rgb(242, 242, 242);
   width: 98%;
-  /* padding: 2px 0 2px 15px; */
   margin-top: 0.15em auto 0 auto;
   font-family: "Caveat Brush", cursive;
   font-size: 22px;
@@ -56,4 +53,10 @@ input[type="submit"] {
   margin: 1.5em auto 0.5em auto;
   font-family: "Caveat Brush", cursive;
   padding: 0.5em;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    background-image: url(img/Bild_2.png);
+  }
 }
