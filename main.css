@@ -1,13 +1,12 @@
 body {
   font-family: "Caveat Brush", cursive;
-  background-color: rgb(250, 246, 239);
   margin: 0;
   background-image: url(img/Bild_1.png);
   color: rgb(242, 242, 242);
 }
 
 .parent {
-  background-color: rgba(184, 170, 148, 0.4);
+  background-color: rgba(184, 170, 148, 0.2);
   height: 100vh;
   display: flex;
   flex-direction: column;
