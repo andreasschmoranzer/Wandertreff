@@ -32,7 +32,7 @@ input,
 textarea {
   background-color: rgba(199, 185, 160, 0.7);
   border: 1px solid rgb(242, 242, 242);
-  width: 98%;
+  width: 99%;
   margin-top: 0.15em auto 0 auto;
   font-family: "Caveat Brush", cursive;
   font-size: 22px;
@@ -58,5 +58,12 @@ input[type="submit"] {
 @media only screen and (min-width: 800px) {
   body {
     background-image: url(img/Bild_2.png);
+  }
+}
+
+@media only screen and (max-height: 680px) {
+  .parent {
+    padding-top: 15px;
+    gap: 15px;
   }
 }
