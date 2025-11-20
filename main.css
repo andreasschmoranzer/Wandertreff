@@ -11,17 +11,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 40px 20px 0 20px; */
   gap: 25px;
-}
-
-.child {
-  font-size: 20px;
 }
 
 .child:nth-child(1) {
   font-size: 35px;
   margin-top: 25px;
+}
+
+.child:nth-child(2) {
+  font-size: 20px;
 }
 
 fieldset {
@@ -39,7 +38,7 @@ input,
 textarea {
   background-color: rgba(199, 185, 160, 0.7);
   border: 1px solid rgb(242, 242, 242);
-  width: 99%;
+  width: 95%;
   margin-top: 0.15em auto 0 auto;
   font-family: "Caveat Brush", cursive;
   font-size: 22px;
@@ -57,7 +56,7 @@ input[type="submit"] {
   color: rgb(242, 242, 242);
   display: block;
   width: max-content;
-  margin: 1.5em auto 0.5em auto;
+  margin: 1.5em auto 0 auto;
   font-family: "Caveat Brush", cursive;
   padding: 0.5em;
 }
@@ -70,7 +69,6 @@ input[type="submit"] {
 
 @media only screen and (max-height: 680px) {
   .parent {
-    padding-top: 15px;
     gap: 15px;
   }
 }
