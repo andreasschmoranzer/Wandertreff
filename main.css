@@ -1,7 +1,9 @@
 body {
   font-family: "Caveat Brush", cursive;
   margin: 0;
-  background-image: url(img/Bild_1.png);
+  background-image: url(img/Bild_1\ adjusted.png);
+  background-position: center;
+  background-repeat: no-repeat;
   color: rgb(242, 242, 242);
 }
 
@@ -59,12 +61,6 @@ input[type="submit"] {
   margin: 1.5em auto 0 auto;
   font-family: "Caveat Brush", cursive;
   padding: 0.5em;
-}
-
-@media only screen and (min-width: 800px) {
-  body {
-    background-image: url(img/Bild_2.png);
-  }
 }
 
 @media only screen and (max-height: 680px) {
