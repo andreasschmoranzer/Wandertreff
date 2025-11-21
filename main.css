@@ -1,14 +1,18 @@
 body {
   font-family: "Caveat Brush", cursive;
   margin: 0;
-  background-image: url(img/Bild_1\ adjusted.png);
+  background: linear-gradient(
+      0deg,
+      rgba(184, 170, 148, 0.2),
+      rgba(184, 170, 148, 0.2)
+    ),
+    url(img/Bild_1\ adjusted.png);
   background-position: center;
   background-repeat: no-repeat;
   color: rgb(242, 242, 242);
 }
 
 .parent {
-  background-color: rgba(184, 170, 148, 0.2);
   height: 100vh;
   display: flex;
   flex-direction: column;
